@@ -61,22 +61,41 @@ To get started with SKETCH eCommerce website locally, follow these steps:
 
 1. **Clone the repository:**
 ```
-git clone https://github.com/your/repository.git
-cd repository-folder
+git clone https://github.com/KaranOO/SKETCH.git
+cd api
 ```
 
 2. **Install dependencies:**
 ```
 yarn install
+npx create-strapi-app@latest
 ```
 
 3. **Set up Strapi backend:**
-- Follow Strapi documentation to set up your backend and configure necessary models and APIs.
+- Follow Strapi documentation to set up your backend and configure necessary models and APIs. Also, if you are beginner then detailed instructions step wise are given below.
 
 4. **Configure Stripe:**
-- Sign up for a Stripe account and configure your API keys in the appropriate files.
+- Sign up for a Stripe account and configure your API keys in the appropriate files. Also, if you are beginner then detailed instructions step wise are given below.
 
-5. **Run the development server:**
+Here are the steps: After writing command to install strapi app in api directory. Once wrote this command - "npx create-strapi-app@latest"
+Then select **CUSTOM** setting to setup the file
+ - Select **JACASCRIPT** as preferred language
+ - Select **mysql** as databse
+ - Name database as **store**
+ - Leave host and port as it is. Just hit enter.
+ - Choose UserName. _I chose it as **root**_
+ - Choose Password. _I set it as **db123**_
+ - Hit **"n"** for SSL Certificate as it is just development purpose.
+> [!NOTE]
+> In case you face an error, just open mysql and create new schema there named **"store"**.
+  - write this command in the api directory terminal
+```
+yarn develop
+```
+  - Now setip Strapi Store. You can go with documentatin of STRAPI.
+
+
+5. **Run the development server in client:**
 ```
 yarn start
 ```
