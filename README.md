@@ -19,4 +19,4 @@
 ![Single product page](././image/ProductPage.png)
 
 # Footer
-![Footer}(././image/Footer.png)
+![Footer](././image/Footer.png)
